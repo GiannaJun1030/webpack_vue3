@@ -1,5 +1,5 @@
 {
-  "name": "vue2webpack",
+  "name": "vue3webpack",
   "version": "1.0.0",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -52,6 +52,7 @@
     "sass-loader": "^12.6.0",
     "sass-resources-loader": "^2.2.5",
     "style-loader": "^3.3.1",
+    "tailwindcss": "^3.3.1",
     "vue-loader": "^17.0.1",
     "vue-style-loader": "^4.1.3",
     "webpack": "^5.72.0",
