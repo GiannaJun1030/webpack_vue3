@@ -13,12 +13,12 @@
     "@babel/runtime": "^7.18.3",
     "core-js": "^3.28.0",
     "dotenv": "^16.0.1",
+    "pinia": "^2.0.33",
     "resize-observer-polyfill": "^1.5.1",
     "throttle-debounce": "^5.0.0",
     "underscore": "^1.13.4",
     "vue": "^3.2.36",
-    "vue-router": "^4.1.6",
-    "vuex": "^4.1.0"
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@babel/core": "^7.17.10",
