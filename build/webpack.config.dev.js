@@ -52,9 +52,13 @@ const config = {
         },
       },
     },
-    compress: true,
     open: true,
-    hot: true,
+    client: {
+      overlay: {
+        errors: true,
+        warnings: false,
+      },
+    },
   },
 };
 

@@ -30,6 +30,7 @@ const babelRules = [
   },
 ];
 module.exports = {
+  stats: 'errors-warnings',
   entry: {
     index: './src/main',
   },
@@ -69,6 +70,7 @@ module.exports = {
     }),
     new WebpackBar({
       color: '#a76933',
+      reporters: ['fancy'],
     }),
   ],
 };
