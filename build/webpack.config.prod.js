@@ -38,7 +38,8 @@ const config = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name].[contenthash:8].css',
+      filename: 'css/[name].[contenthash:8].css',
+      chunkFilename: 'css/[id]-[contenthash:6].css',
     }),
   ],
 };

@@ -39,6 +39,7 @@ module.exports = {
     path: resolve(__root, 'dist'),
     clean: true,
     filename: '[name].bundle.[contenthash:8].js',
+    chunkFilename: '[name].chunk.[contenthash:8].js',
     assetModuleFilename: 'assets/[name].[hash][ext][query]',
     library: {
       name: `${name}@${version}`,

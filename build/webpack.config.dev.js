@@ -38,7 +38,7 @@ const config = {
     port: 'auto',
     proxy: {
       '/api': {
-        target: 'http://localhost:3000/',
+        target: process.env.PROXY_URL,
         pathRewrite: {
           '/api': '',
         },

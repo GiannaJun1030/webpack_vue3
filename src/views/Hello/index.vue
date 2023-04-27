@@ -1,5 +1,8 @@
 <template>
-  <div class="hello">hello</div>
+  <div class="hello">
+    hello
+    <img :src="require('@/assets/111.png')" alt="" />
+  </div>
 </template>
 
 <script lang="ts"></script>
