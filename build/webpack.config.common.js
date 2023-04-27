@@ -83,6 +83,8 @@ module.exports = {
     Components({
       resolvers: [ElementPlusResolver()],
     }),
+    require('unplugin-auto-import/webpack'),
+    require('unplugin-vue-components/webpack'),
     // require('unplugin-element-plus/webpack')(),
   ],
 };

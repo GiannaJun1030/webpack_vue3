@@ -2,9 +2,7 @@
   <div>home</div>
   <ElButton />
 </template>
-<script lang="ts" setup>
-import { ElButton } from 'element-plus';
-</script>
+<script lang="ts" setup></script>
 
 <style lang="scss" scoped>
 span {
