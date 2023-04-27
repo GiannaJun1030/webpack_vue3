@@ -1,3 +1,5 @@
+const BundleAnalyzerPlugin =
+  require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const { merge } = require('webpack-merge');
 const { resolve } = require('path');
 
@@ -41,6 +43,7 @@ const config = {
       filename: 'css/[name].[contenthash:8].css',
       chunkFilename: 'css/[id]-[contenthash:6].css',
     }),
+    new BundleAnalyzerPlugin(),
   ],
 };
 

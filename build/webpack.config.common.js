@@ -2,6 +2,10 @@ const { VueLoaderPlugin } = require('vue-loader/dist/index');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackBar = require('webpackbar');
 
+const AutoImport = require('unplugin-auto-import/webpack');
+const Components = require('unplugin-vue-components/webpack');
+const { ElementPlusResolver } = require('unplugin-vue-components/resolvers');
+
 const { resolve } = require('path');
 const __root = resolve(__dirname, '../');
 const { name, version } = require('../package.json');
@@ -73,5 +77,12 @@ module.exports = {
       color: '#a76933',
       reporters: ['fancy'],
     }),
+    AutoImport({
+      resolvers: [ElementPlusResolver()],
+    }),
+    Components({
+      resolvers: [ElementPlusResolver()],
+    }),
+    // require('unplugin-element-plus/webpack')(),
   ],
 };
