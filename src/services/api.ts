@@ -101,24 +101,4 @@ export const makeRequest: MakeRequest = <T>(config: RequestConfig) => {
   };
 };
 
-export const getEcharts = makeRequest<{ name: string; age: number }>({
-  url: '/picc/echarts',
-  limit: 3,
-});
-
-export const getEcharts2 = makeRequest<
-  {
-    name: string;
-    age: number;
-    weight: number;
-  },
-  { wojiushixiedaizaibodyde: string },
-  { wojiushipingjiezaiurlde: string },
-  { echarts: string }
->({
-  url: '/picc/{echarts}',
-  limit: 2,
-  method: 'post',
-});
-
 export default makeRequest;

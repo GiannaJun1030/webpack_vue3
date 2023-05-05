@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "dev": "webpack serve -c ./build/webpack.config.dev.js --open",
+    "dev": "webpack serve -c ./build/webpack.config.dev.js",
     "build": "webpack build -c ./build/webpack.config.prod.js",
     "prepare": "husky install"
   },
